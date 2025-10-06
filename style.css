@@ -6,7 +6,7 @@ html,body{
 
 body{
 
-    /* background: url(6107100.jpg); */
+    
     background:black;
     
     background-size: cover;
@@ -16,15 +16,7 @@ body{
     text-align: center;
     color:whitesmoke;
 }
-/* .start-screen{
-    text-align: center;
-    color: white;
-    background-color:rgba(0, 0, 0, 0.3);
-    height: 20vh;
-    width: 80vw;
-    margin: 20px auto;
-    border-radius: 10px;
-} */
+
 
 #quiz{
     display: flex;
@@ -97,6 +89,55 @@ body{
     cursor: not-allowed;
     opacity: 0.8;
 }
+/* 🎯 Button container (optional for alignment) */
+#quiz-container button {
+  margin: 10px;
+}
+
+/* 🎨 Common button styles */
+button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ✨ Restart button */
+#Restart-btn {
+  background-color: #2196f3;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 6px rgba(33, 150, 243, 0.3);
+}
+#Restart-btn:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+}
+
+/* 📖 Review button */
+#review-btn {
+  background-color: #8e44ad;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 6px rgba(142, 68, 173, 0.3);
+}
+#review-btn:hover {
+  background-color: #732d91;
+  transform: translateY(-2px);
+}
+
+/* 💫 Add subtle hover animation */
+button:active {
+  transform: scale(0.97);
+}
+
 
 .review-item {
     text-align: left;
