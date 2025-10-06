@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+        <div class="header">
+            <h1>Qbit</h1>
+            <h3>Where every bit of knowledge counts.</h3>
+        </div>
+        
+    <div id="start-screen">
+
+        <div id="quiz">
+            <h2>QUIZ-APP</h2>
+            <button id="btn" onclick="startquiz()">Start quiz</button>
+        </div>
+    </div>
+
+
+
+    <!-- quiz-screen  -->
+     <div  id="quiz-container" style="display: none;">
+        <h2 id="questions">Question Text</h2>
+        <div id="answers"></div>
+        <p id="timer">Time left:10s</p>
+        <p id="score"></p>
+
+        <div id="score-meter" style="display: none;">
+            <div class="circular-meter">
+                <svg viewBox="0 0 120 120">
+                <circle class="bg" cx="60" cy="60" r="54"></circle>
+                <circle class="progress" cx="60" cy="60" r="54"></circle>
+                </svg>
+            <div id="meter-text">0%</div>
+            </div>
+            </div>
+
+
+
+        <button  id="next-btn" style="display: none;" onclick="nextQuestion()">Next</button>
+
+        <button id="Restart-btn" style="display: none;"  onclick="restartQuiz()">🔄️ Restart Quiz</button>
+        <button id="review-btn" style="display:none;" onclick="showReview()">📖 Review Answers</button>
+
+
+        
+     </div>
+
+
+        <script src="quiz.js"></script>
+
+</body>
+</html>
